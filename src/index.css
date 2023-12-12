@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&family=Kablammo&display=swap');
+body {
+  margin: 0;
+  font-family: 'Encode Sans', sans-serif;
+  font-weight: 600;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+::placeholder{
+  font-family: 'Encode Sans', sans-serif;
+}
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1450px;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-height: 100vh;
+}
+.note {
+  transition: 0.3s;
+  background-color: #f28;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note:hover{
+  transform: scale(1.03);
+}
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.notes-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.note.new{
+  background-color: #06f7df;
+}
+textarea{
+  border: none;
+  resize: none;
+  background-color: #06f7df;
+}
+textarea:focus{
+  outline: none;
+}
+.save{
+  font-family: 'Kablammo', cursive;
+  background-color: #e1e1e1;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  transition: 0.3s;
+}
+.save:hover{
+  transform: scale(1.2);
+  background-color: #ededed;
+  cursor: pointer;
+}
+.delete-icon{
+  cursor: pointer;
+}
+.search-icons{
+  margin-left: 10px;
+  height: 25px;
+  width: 40px;
+}
+.search{
+   display: flex;
+   align-items: center;
+   background-color: rgb(194, 184, 184);
+   border-radius: 5px;
+   padding: 5px;
+   height: 33px;
+   margin-bottom: 1.5rem;
+}
+.search input{
+  margin-left: 20px;
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  background-color: rgb(194, 184, 184);
+}
+.search :focus{
+  outline: none;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.light-mode {
+  background-color: beige;
+}
+.dark-mode{
+  background-color: #000;
+}
+.dark-mode h1{
+  color: #fff;
+}
+.logo{
+  font-family: 'Kablammo', cursive;
+}
